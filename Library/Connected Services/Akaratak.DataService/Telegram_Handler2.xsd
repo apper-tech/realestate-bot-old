@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" />
+  <xs:element name="_Add_User">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="handler" nillable="true" type="q1:Options_Handler" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Add_UserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Add_UserResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Test">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_User_Exist">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="handler" nillable="true" type="q2:Options_Handler" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_User_ExistResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_User_ExistResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Update_User">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="handler" nillable="true" type="q3:Options_Handler" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Update_UserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Update_UserResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Add_Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="property" nillable="true" type="q4:Options_Handler" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Add_PropertyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Add_PropertyResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_Property_List">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="handler" nillable="true" type="q5:Options_Handler" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_Property_ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="_Get_Property_ListResult" nillable="true" type="q6:ArrayOfOptions_Handler" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Update_Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="property" nillable="true" type="q7:Options_Handler" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Update_PropertyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_Update_PropertyResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_City_List">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_City_ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="_Get_City_ListResult" nillable="true" type="q8:ArrayOfCity_Handler" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_Country_List">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_Country_ListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="_Get_Country_ListResult" nillable="true" type="q9:ArrayOfCountry_Handler" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_Property_Value">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="handler" nillable="true" type="q10:Options_Handler" />
+        <xs:element minOccurs="0" name="address" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="date" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="_Get_Property_ValueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" minOccurs="0" name="_Get_Property_ValueResult" nillable="true" type="q11:Options_Handler" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

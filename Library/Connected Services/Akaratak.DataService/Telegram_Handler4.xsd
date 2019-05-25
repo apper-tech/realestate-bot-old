@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+  <xs:complexType name="Options_Handler">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cat" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Contract_Type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Country_ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Date_Added" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpectedEntry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Expire_Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Floor" type="xs:int" />
+      <xs:element minOccurs="0" name="Garage" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Garden" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Has_Garage" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Has_Garden" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Lang" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Num_Bathrooms" type="xs:int" />
+      <xs:element minOccurs="0" name="Num_Bedrooms" type="xs:int" />
+      <xs:element minOccurs="0" name="Num_Floors" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Oldpassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Other_Details" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.IO" minOccurs="0" name="Photostream" nillable="true" type="q1:FileStream" />
+      <xs:element minOccurs="0" name="PropertyID" type="xs:int" />
+      <xs:element minOccurs="0" name="Property_Category_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Property_Id_ext" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Property_Photo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Property_Size" type="xs:int" />
+      <xs:element minOccurs="0" name="Property_Type_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Rent_Price" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sale_Price" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Url_ext" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip_Code" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Options_Handler" nillable="true" type="tns:Options_Handler" />
+  <xs:complexType name="ArrayOfOptions_Handler">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Options_Handler" nillable="true" type="tns:Options_Handler" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOptions_Handler" nillable="true" type="tns:ArrayOfOptions_Handler" />
+  <xs:complexType name="ArrayOfCity_Handler">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="City_Handler" nillable="true" type="tns:City_Handler" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCity_Handler" nillable="true" type="tns:ArrayOfCity_Handler" />
+  <xs:complexType name="City_Handler">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="City_Latin_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City_Native_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="City_Handler" nillable="true" type="tns:City_Handler" />
+  <xs:complexType name="ArrayOfCountry_Handler">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country_Handler" nillable="true" type="tns:Country_Handler" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry_Handler" nillable="true" type="tns:ArrayOfCountry_Handler" />
+  <xs:complexType name="Country_Handler">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Country_Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Country_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country_Native_Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country_Handler" nillable="true" type="tns:Country_Handler" />
+</xs:schema>

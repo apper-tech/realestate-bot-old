@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{1709E837-6176-44F0-BF11-9A7DD279640E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Handler", "Handler\Handler.csproj", "{88C7C39D-B7E2-4822-B22C-6B615D45801F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1709E837-6176-44F0-BF11-9A7DD279640E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1709E837-6176-44F0-BF11-9A7DD279640E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1709E837-6176-44F0-BF11-9A7DD279640E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1709E837-6176-44F0-BF11-9A7DD279640E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88C7C39D-B7E2-4822-B22C-6B615D45801F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C7C39D-B7E2-4822-B22C-6B615D45801F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C7C39D-B7E2-4822-B22C-6B615D45801F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C7C39D-B7E2-4822-B22C-6B615D45801F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DA94BBA-7D7E-4520-B0B9-E6F58C8CD5A5}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dynamicdatawebapp.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Library\\Library.csproj
+		SccProjectName1 = Library
+		SccLocalPath1 = Library
+		SccProjectUniqueName2 = Handler\\Handler.csproj
+		SccProjectName2 = Handler
+		SccLocalPath2 = Handler
+	EndGlobalSection
+EndGlobal

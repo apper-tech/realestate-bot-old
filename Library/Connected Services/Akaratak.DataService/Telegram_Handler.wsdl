@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Telegram_Handler" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DynamicDataWebSite" />
+      <xsd:import schemaLocation="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.IO" />
+      <xsd:import schemaLocation="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITelegram_Handler__Add_User_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Add_User" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Add_User_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Add_UserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler_Test_InputMessage">
+    <wsdl:part name="parameters" element="tns:Test" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler_Test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__User_Exist_InputMessage">
+    <wsdl:part name="parameters" element="tns:_User_Exist" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__User_Exist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_User_ExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Update_User_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Update_User" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Update_User_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Update_UserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Add_Property_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Add_Property" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Add_Property_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Add_PropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_Property_List_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_Property_List" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_Property_List_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_Property_ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Update_Property_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Update_Property" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Update_Property_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Update_PropertyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_City_List_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_City_List" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_City_List_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_City_ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_Country_List_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_Country_List" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_Country_List_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_Country_ListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_Property_Value_InputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_Property_Value" />
+  </wsdl:message>
+  <wsdl:message name="ITelegram_Handler__Get_Property_Value_OutputMessage">
+    <wsdl:part name="parameters" element="tns:_Get_Property_ValueResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITelegram_Handler">
+    <wsdl:operation name="_Add_User">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Add_User" message="tns:ITelegram_Handler__Add_User_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Add_UserResponse" message="tns:ITelegram_Handler__Add_User_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/Test" message="tns:ITelegram_Handler_Test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/TestResponse" message="tns:ITelegram_Handler_Test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_User_Exist">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_User_Exist" message="tns:ITelegram_Handler__User_Exist_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_User_ExistResponse" message="tns:ITelegram_Handler__User_Exist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_Update_User">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Update_User" message="tns:ITelegram_Handler__Update_User_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Update_UserResponse" message="tns:ITelegram_Handler__Update_User_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_Add_Property">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Add_Property" message="tns:ITelegram_Handler__Add_Property_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Add_PropertyResponse" message="tns:ITelegram_Handler__Add_Property_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_Get_Property_List">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_Property_List" message="tns:ITelegram_Handler__Get_Property_List_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_Property_ListResponse" message="tns:ITelegram_Handler__Get_Property_List_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_Update_Property">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Update_Property" message="tns:ITelegram_Handler__Update_Property_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Update_PropertyResponse" message="tns:ITelegram_Handler__Update_Property_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_Get_City_List">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_City_List" message="tns:ITelegram_Handler__Get_City_List_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_City_ListResponse" message="tns:ITelegram_Handler__Get_City_List_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_Get_Country_List">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_Country_List" message="tns:ITelegram_Handler__Get_Country_List_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_Country_ListResponse" message="tns:ITelegram_Handler__Get_Country_List_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="_Get_Property_Value">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_Property_Value" message="tns:ITelegram_Handler__Get_Property_Value_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITelegram_Handler/_Get_Property_ValueResponse" message="tns:ITelegram_Handler__Get_Property_Value_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITelegram_Handler" type="tns:ITelegram_Handler">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="_Add_User">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Add_User" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Test">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/Test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_User_Exist">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_User_Exist" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_Update_User">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Update_User" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_Add_Property">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Add_Property" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_Get_Property_List">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Get_Property_List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_Update_Property">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Update_Property" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_Get_City_List">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Get_City_List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_Get_Country_List">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Get_Country_List" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="_Get_Property_Value">
+      <soap:operation soapAction="http://tempuri.org/ITelegram_Handler/_Get_Property_Value" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Telegram_Handler">
+    <wsdl:port name="BasicHttpBinding_ITelegram_Handler" binding="tns:BasicHttpBinding_ITelegram_Handler">
+      <soap:address location="http://weappweb-001-site1.btempurl.com/Services/Telegram_Handler.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

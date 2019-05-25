@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fe379639-8828-4682-811a-0ca255e76acf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://akaratak.com/Services/Telegram_Handler.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Telegram_Handler.xsd" MetadataType="Schema" ID="e1009475-89d0-4a1b-8ccb-fe68c0ac911f" SourceId="1" SourceUrl="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd4" />
+    <MetadataFile FileName="Telegram_Handler1.xsd" MetadataType="Schema" ID="b63be4c6-1786-465a-8f62-ec6474083ccb" SourceId="1" SourceUrl="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd3" />
+    <MetadataFile FileName="Telegram_Handler2.xsd" MetadataType="Schema" ID="6a11e7fa-1b73-4794-9657-91051914f0dd" SourceId="1" SourceUrl="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd0" />
+    <MetadataFile FileName="Telegram_Handler3.xsd" MetadataType="Schema" ID="966f5e60-b2ea-4b12-aa02-d185e8551500" SourceId="1" SourceUrl="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd1" />
+    <MetadataFile FileName="Telegram_Handler.wsdl" MetadataType="Wsdl" ID="4eb7bdbd-2b74-4431-b13d-452de2a576c0" SourceId="1" SourceUrl="https://akaratak.com/Services/Telegram_Handler.svc?wsdl" />
+    <MetadataFile FileName="Telegram_Handler.disco" MetadataType="Disco" ID="01cb9bb2-d1a4-4746-b50e-91faed6430e4" SourceId="1" SourceUrl="https://akaratak.com/Services/Telegram_Handler.svc?disco" />
+    <MetadataFile FileName="Telegram_Handler4.xsd" MetadataType="Schema" ID="a64aba0e-b52f-4287-aebd-d79f97fa92fd" SourceId="1" SourceUrl="https://akaratak.com/Services/Telegram_Handler.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
